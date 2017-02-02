@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PicAid_1._0.doc_detail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Name" Grid.Column="0" Grid.Row="0"></TextBlock>
+            <TextBlock Text="Type" Grid.Column="0" Grid.Row="1"></TextBlock>
+            <TextBlock Text="Address" Grid.Column="0" Grid.Row="2"></TextBlock>
+            <TextBlock Text="Area" Grid.Column="0" Grid.Row="3"></TextBlock>
+            <TextBlock Text="City" Grid.Column="0" Grid.Row="4"></TextBlock>
+            <TextBlock Text="Contact" Grid.Column="0" Grid.Row="5"></TextBlock>
+            <TextBlock Text="Email ID" Grid.Column="0" Grid.Row="6"></TextBlock>
+                            
+            <TextBlock Grid.Column="1" Grid.Row="0" Name="txt_docname" Text="{Binding doc_name}"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="1" Name="txt_doc_for" Text="{Binding doc_for}"></TextBlock>
+            <TextBlock Name="txt_doc_add" Grid.Row="2" Grid.Column="1" Text="{Binding doc_hos_add}"></TextBlock>
+            <TextBlock Name="txt_doc_area" Grid.Row="3" Grid.Column="1" Text="{Binding area}"></TextBlock>
+            <TextBlock Name="txt_doc_city" Grid.Row="4" Grid.Column="1" Text="{Binding city_doc}"></TextBlock>
+            <TextBlock Name="txt_doc_cont" Grid.Row="5" Grid.Column="1" Text="{Binding contact}"></TextBlock>
+            <TextBlock Name="txt_doc_email" Grid.Row="6" Grid.Column="1" Text="{Binding email_id}"></TextBlock>
+                       
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

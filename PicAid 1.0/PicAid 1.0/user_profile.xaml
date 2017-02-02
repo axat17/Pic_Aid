@@ -1,0 +1,143 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    x:Class="PicAid_1._0.user_profile"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="White"
+    shell:SystemTray.ForegroundColor="#FFF76969">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Background="White">
+            <TextBlock Text="user profile" Foreground="#FFF76969" FontSize="30" Style="{StaticResource PhoneTextNormalStyle}" FontFamily="/PicAid 1.0;component/Fonts/Fonts.zip#Gisha"/>
+            <TextBlock Text="me" Foreground="#FFF76969" Style="{StaticResource PhoneTextTitle1Style}" FontFamily="/PicAid 1.0;component/Fonts/Fonts.zip#Gisha"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Background="#FFF76969">
+            <ScrollViewer FontFamily="/PicAid 1.0;component/Fonts/Fonts.zip#Gisha">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="210">
+                        <StackPanel Width="225" Orientation="Vertical">
+                            <TextBlock Height="30" HorizontalAlignment="Left" Text=" " FontSize="25" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" HorizontalAlignment="Left" Text="  email id" FontSize="25" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" HorizontalAlignment="Left"  Text="  name" FontSize="25" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" HorizontalAlignment="Left"  Text="  city" FontSize="25" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" HorizontalAlignment="Left"  Text="  gender" FontSize="25" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" HorizontalAlignment="Left"  Text="  mobile" FontSize="25" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" HorizontalAlignment="Left" Text="date of birth" FontSize="25" VerticalAlignment="Center"/>
+
+                        </StackPanel>
+
+                        <StackPanel Width="225" Orientation="Vertical">
+                            <TextBlock Height="30" HorizontalAlignment="Left" Text=" " FontSize="25" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" x:Name="mail_block" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" x:Name="name_block" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" x:Name="city_block" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" x:Name="gender_block" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" x:Name="mobile_block" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Height="30" x:Name="dob_block" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel>
+                        
+                        <toolkit:ToggleSwitch Background="White" Content="Donate Blood" Name="tglBlood" Unchecked="tglBlood_Unchecked_1" Checked="tglBlood_Checked_1" FontFamily="/PicAid 1.0;component/Fonts/Fonts.zip#Gisha"/>
+                        <StackPanel Orientation="Horizontal" Visibility="Collapsed" Name="Donate_blood_stack">
+                            <StackPanel Width="225" Background="White">
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="A+" Name="APO"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="B+" Name="BPO"></RadioButton>
+                                <RadioButton Foreground="#FFF76969"  Background="#FFF76969" GroupName="One" Content="AB+" Name="ABPO"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="O+" Name="OPO"></RadioButton>
+                            </StackPanel>
+                            <StackPanel Width="225" Background="White">
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="A-" Name="ANAG"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="B-" Name="BNAG"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="AB-" Name="ABNAG"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="O-" Name="ONAG"></RadioButton>
+                                <Button Foreground="White" Background="#FFF76969" Content="Submit" Click="Button_Click_1"></Button>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <toolkit:ToggleSwitch Background="White" Content="Donate Organ" Name="tglOrgan" Unchecked="tglOrgan_Unchecked_1" Checked="tglOrgan_Checked_1" FontFamily="/PicAid 1.0;component/Fonts/Fonts.zip#Gisha"/>
+                        <StackPanel Orientation="Vertical" Visibility="Collapsed" Name="Donate_organ_stack">
+                            <ListBox Name="lstOrganList" Foreground="#FFF76969" Background="White" SelectionChanged="lstOrganList_SelectionChanged">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" >
+                                            <CheckBox Name="chk1" Content="{Binding sub_cat_name}" Background="#FFF76969" Foreground="#FFF76969" Checked="CheckBox_Checked" Unchecked="chk1_Unchecked"></CheckBox>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <StackPanel>
+                                <Button Name="btn_save" Background="#FFF76969" Foreground="White" Content="Submit" Click="btn_save_Click"></Button>
+                            </StackPanel>
+                        </StackPanel>
+
+
+
+                        <toolkit:ToggleSwitch Background="White" Content="Need Blood" Name="tglPaientBlood" Checked="tglPaientBlood_Checked_1" Unchecked="tglPaientBlood_Unchecked_1" FontFamily="/PicAid 1.0;component/Fonts/Fonts.zip#Gisha"/>
+                        <StackPanel Orientation="Horizontal" Visibility="Collapsed" Name="Need_blood_stack">
+                            <StackPanel Width="225" Background="White">
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="A+" Name="NDAPO"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="B+" Name="NDBPO"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="AB+" Name="NDABPO"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="O+" Name="NDOPO"></RadioButton>
+                            </StackPanel>
+                            <StackPanel Width="225" Background="White">
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="A-" Name="NDANAG"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="B-" Name="NDBNAG"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="AB-" Name="NDABNAG"></RadioButton>
+                                <RadioButton Foreground="#FFF76969" Background="#FFF76969" GroupName="One" Content="O-" Name="NDONAG"></RadioButton>
+                                <Button Background="#FFF76969" Foreground="White" Content="Submit" Name="needbld_btn" Click="needbld_btn_Click_1"></Button>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <toolkit:ToggleSwitch Background="White" Checked="tglPatientOrgan_Checked" Unchecked="tglPatientOrgan_Unchecked" Content="Need Organ" Name="tglPatientOrgan" FontFamily="/PicAid 1.0;component/Fonts/Fonts.zip#Gisha"/>
+                        <StackPanel Orientation="Vertical" Visibility="Collapsed" Name="Need_Organ_stack">
+                            <ListBox Name="lstNeedOrganList" Background="White" Foreground="#FFF76969">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Background="White">
+                                            <CheckBox Name="chk2" Content="{Binding sub_cat_name}" Checked="chk2_Checked_1" Unchecked="chk2_Unchecked_1"  Foreground="#FFF76969" Background="#FFF76969"></CheckBox>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <StackPanel>
+                                <Button Name="needorg_btn" Click="needorg_btn_Click_1" Background="#FFF76969" Foreground="White" Content="Submit"></Button>
+                            </StackPanel>
+                        </StackPanel>
+
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar BackgroundColor="White" ForegroundColor="#FFF76969">
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Edit Profile"></shell:ApplicationBarMenuItem>
+                <shell:ApplicationBarMenuItem Text="Log Out" Click="ApplicationBarMenuItem_Click_2"></shell:ApplicationBarMenuItem>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

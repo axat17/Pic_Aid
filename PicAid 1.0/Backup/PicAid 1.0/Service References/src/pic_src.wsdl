@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sign_up">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="f_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dob" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sign_upResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sign_upResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="chk_usr_pass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="chk_usr_passResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="chk_usr_passResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_detail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="user_detailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_detailResult" type="tns:ArrayOfPic_user_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPic_user_tbl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="pic_user_tbl" nillable="true" type="tns:pic_user_tbl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="pic_user_tbl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="f_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gen" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="img" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dob" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="get_hos_cat">
+        <s:complexType />
+      </s:element>
+      <s:element name="get_hos_catResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_hos_catResult" type="tns:ArrayOfPic_hos_cat_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPic_hos_cat_tbl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="pic_hos_cat_tbl" nillable="true" type="tns:pic_hos_cat_tbl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="pic_hos_cat_tbl">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="hos_cat_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="hos_cat_name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="get_doc_cat">
+        <s:complexType />
+      </s:element>
+      <s:element name="get_doc_catResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_doc_catResult" type="tns:ArrayOfPic_doc_cat_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPic_doc_cat_tbl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="pic_doc_cat_tbl" nillable="true" type="tns:pic_doc_cat_tbl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="pic_doc_cat_tbl">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="doc_cat_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="doc_cat_name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="get_hos_by_id">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hos_cat_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_hos_by_idResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_hos_by_idResult" type="tns:ArrayOfPic_hospital_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPic_hospital_tbl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="pic_hospital_tbl" nillable="true" type="tns:pic_hospital_tbl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="pic_hospital_tbl">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="hos_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="hos_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hos_cat_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hos_for" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="area" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contact_1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contact_2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hos_type" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="get_hos_for_multi">
+        <s:complexType />
+      </s:element>
+      <s:element name="get_hos_for_multiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_hos_for_multiResult" type="tns:ArrayOfPic_hospital_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_doc_by_id">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="doc_cat_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_doc_by_idResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_doc_by_idResult" type="tns:ArrayOfPic_doctor_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPic_doctor_tbl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="pic_doctor_tbl" nillable="true" type="tns:pic_doctor_tbl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="pic_doctor_tbl">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="doc_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="doc_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="doc_cat_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="doc_hos_add" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="city_doc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="area" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="doc_for" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="hos_dtl_by_list">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hos_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="hos_dtl_by_listResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hos_dtl_by_listResult" type="tns:ArrayOfPic_hospital_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="doc_dtl_by_list">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="doc_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="doc_dtl_by_listResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="doc_dtl_by_listResult" type="tns:ArrayOfPic_doctor_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_donation_type">
+        <s:complexType />
+      </s:element>
+      <s:element name="get_donation_typeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_donation_typeResult" type="tns:ArrayOfPic_donation_sub_cat_tbl" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPic_donation_sub_cat_tbl">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="pic_donation_sub_cat_tbl" nillable="true" type="tns:pic_donation_sub_cat_tbl" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="pic_donation_sub_cat_tbl">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="sub_cat_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="sub_cat_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cat_id" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insert_blood">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cat_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type_of_donation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="date_donation" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_bloodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insert_bloodResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_organ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cat_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type_of_donation" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="date_donation" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_organResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insert_organResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_request_blood">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cat_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type_of_need" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="date_request" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_request_bloodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insert_request_bloodResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_request_organ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cat_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type_of_need" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="date_request" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_request_organResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insert_request_organResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="sign_upSoapIn">
+    <wsdl:part name="parameters" element="tns:sign_up" />
+  </wsdl:message>
+  <wsdl:message name="sign_upSoapOut">
+    <wsdl:part name="parameters" element="tns:sign_upResponse" />
+  </wsdl:message>
+  <wsdl:message name="chk_usr_passSoapIn">
+    <wsdl:part name="parameters" element="tns:chk_usr_pass" />
+  </wsdl:message>
+  <wsdl:message name="chk_usr_passSoapOut">
+    <wsdl:part name="parameters" element="tns:chk_usr_passResponse" />
+  </wsdl:message>
+  <wsdl:message name="user_detailSoapIn">
+    <wsdl:part name="parameters" element="tns:user_detail" />
+  </wsdl:message>
+  <wsdl:message name="user_detailSoapOut">
+    <wsdl:part name="parameters" element="tns:user_detailResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_hos_catSoapIn">
+    <wsdl:part name="parameters" element="tns:get_hos_cat" />
+  </wsdl:message>
+  <wsdl:message name="get_hos_catSoapOut">
+    <wsdl:part name="parameters" element="tns:get_hos_catResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_doc_catSoapIn">
+    <wsdl:part name="parameters" element="tns:get_doc_cat" />
+  </wsdl:message>
+  <wsdl:message name="get_doc_catSoapOut">
+    <wsdl:part name="parameters" element="tns:get_doc_catResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_hos_by_idSoapIn">
+    <wsdl:part name="parameters" element="tns:get_hos_by_id" />
+  </wsdl:message>
+  <wsdl:message name="get_hos_by_idSoapOut">
+    <wsdl:part name="parameters" element="tns:get_hos_by_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_hos_for_multiSoapIn">
+    <wsdl:part name="parameters" element="tns:get_hos_for_multi" />
+  </wsdl:message>
+  <wsdl:message name="get_hos_for_multiSoapOut">
+    <wsdl:part name="parameters" element="tns:get_hos_for_multiResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_doc_by_idSoapIn">
+    <wsdl:part name="parameters" element="tns:get_doc_by_id" />
+  </wsdl:message>
+  <wsdl:message name="get_doc_by_idSoapOut">
+    <wsdl:part name="parameters" element="tns:get_doc_by_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="hos_dtl_by_listSoapIn">
+    <wsdl:part name="parameters" element="tns:hos_dtl_by_list" />
+  </wsdl:message>
+  <wsdl:message name="hos_dtl_by_listSoapOut">
+    <wsdl:part name="parameters" element="tns:hos_dtl_by_listResponse" />
+  </wsdl:message>
+  <wsdl:message name="doc_dtl_by_listSoapIn">
+    <wsdl:part name="parameters" element="tns:doc_dtl_by_list" />
+  </wsdl:message>
+  <wsdl:message name="doc_dtl_by_listSoapOut">
+    <wsdl:part name="parameters" element="tns:doc_dtl_by_listResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_donation_typeSoapIn">
+    <wsdl:part name="parameters" element="tns:get_donation_type" />
+  </wsdl:message>
+  <wsdl:message name="get_donation_typeSoapOut">
+    <wsdl:part name="parameters" element="tns:get_donation_typeResponse" />
+  </wsdl:message>
+  <wsdl:message name="insert_bloodSoapIn">
+    <wsdl:part name="parameters" element="tns:insert_blood" />
+  </wsdl:message>
+  <wsdl:message name="insert_bloodSoapOut">
+    <wsdl:part name="parameters" element="tns:insert_bloodResponse" />
+  </wsdl:message>
+  <wsdl:message name="insert_organSoapIn">
+    <wsdl:part name="parameters" element="tns:insert_organ" />
+  </wsdl:message>
+  <wsdl:message name="insert_organSoapOut">
+    <wsdl:part name="parameters" element="tns:insert_organResponse" />
+  </wsdl:message>
+  <wsdl:message name="insert_request_bloodSoapIn">
+    <wsdl:part name="parameters" element="tns:insert_request_blood" />
+  </wsdl:message>
+  <wsdl:message name="insert_request_bloodSoapOut">
+    <wsdl:part name="parameters" element="tns:insert_request_bloodResponse" />
+  </wsdl:message>
+  <wsdl:message name="insert_request_organSoapIn">
+    <wsdl:part name="parameters" element="tns:insert_request_organ" />
+  </wsdl:message>
+  <wsdl:message name="insert_request_organSoapOut">
+    <wsdl:part name="parameters" element="tns:insert_request_organResponse" />
+  </wsdl:message>
+  <wsdl:portType name="pic_srcSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sign_up">
+      <wsdl:input message="tns:sign_upSoapIn" />
+      <wsdl:output message="tns:sign_upSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="chk_usr_pass">
+      <wsdl:input message="tns:chk_usr_passSoapIn" />
+      <wsdl:output message="tns:chk_usr_passSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="user_detail">
+      <wsdl:input message="tns:user_detailSoapIn" />
+      <wsdl:output message="tns:user_detailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_cat">
+      <wsdl:input message="tns:get_hos_catSoapIn" />
+      <wsdl:output message="tns:get_hos_catSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_doc_cat">
+      <wsdl:input message="tns:get_doc_catSoapIn" />
+      <wsdl:output message="tns:get_doc_catSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_by_id">
+      <wsdl:input message="tns:get_hos_by_idSoapIn" />
+      <wsdl:output message="tns:get_hos_by_idSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_for_multi">
+      <wsdl:input message="tns:get_hos_for_multiSoapIn" />
+      <wsdl:output message="tns:get_hos_for_multiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_doc_by_id">
+      <wsdl:input message="tns:get_doc_by_idSoapIn" />
+      <wsdl:output message="tns:get_doc_by_idSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="hos_dtl_by_list">
+      <wsdl:input message="tns:hos_dtl_by_listSoapIn" />
+      <wsdl:output message="tns:hos_dtl_by_listSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="doc_dtl_by_list">
+      <wsdl:input message="tns:doc_dtl_by_listSoapIn" />
+      <wsdl:output message="tns:doc_dtl_by_listSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_donation_type">
+      <wsdl:input message="tns:get_donation_typeSoapIn" />
+      <wsdl:output message="tns:get_donation_typeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insert_blood">
+      <wsdl:input message="tns:insert_bloodSoapIn" />
+      <wsdl:output message="tns:insert_bloodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insert_organ">
+      <wsdl:input message="tns:insert_organSoapIn" />
+      <wsdl:output message="tns:insert_organSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insert_request_blood">
+      <wsdl:input message="tns:insert_request_bloodSoapIn" />
+      <wsdl:output message="tns:insert_request_bloodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insert_request_organ">
+      <wsdl:input message="tns:insert_request_organSoapIn" />
+      <wsdl:output message="tns:insert_request_organSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="pic_srcSoap" type="tns:pic_srcSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign_up">
+      <soap:operation soapAction="http://tempuri.org/sign_up" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="chk_usr_pass">
+      <soap:operation soapAction="http://tempuri.org/chk_usr_pass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_detail">
+      <soap:operation soapAction="http://tempuri.org/user_detail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_cat">
+      <soap:operation soapAction="http://tempuri.org/get_hos_cat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_doc_cat">
+      <soap:operation soapAction="http://tempuri.org/get_doc_cat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_by_id">
+      <soap:operation soapAction="http://tempuri.org/get_hos_by_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_for_multi">
+      <soap:operation soapAction="http://tempuri.org/get_hos_for_multi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_doc_by_id">
+      <soap:operation soapAction="http://tempuri.org/get_doc_by_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hos_dtl_by_list">
+      <soap:operation soapAction="http://tempuri.org/hos_dtl_by_list" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doc_dtl_by_list">
+      <soap:operation soapAction="http://tempuri.org/doc_dtl_by_list" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_donation_type">
+      <soap:operation soapAction="http://tempuri.org/get_donation_type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_blood">
+      <soap:operation soapAction="http://tempuri.org/insert_blood" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_organ">
+      <soap:operation soapAction="http://tempuri.org/insert_organ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_request_blood">
+      <soap:operation soapAction="http://tempuri.org/insert_request_blood" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_request_organ">
+      <soap:operation soapAction="http://tempuri.org/insert_request_organ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="pic_srcSoap12" type="tns:pic_srcSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sign_up">
+      <soap12:operation soapAction="http://tempuri.org/sign_up" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="chk_usr_pass">
+      <soap12:operation soapAction="http://tempuri.org/chk_usr_pass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="user_detail">
+      <soap12:operation soapAction="http://tempuri.org/user_detail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_cat">
+      <soap12:operation soapAction="http://tempuri.org/get_hos_cat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_doc_cat">
+      <soap12:operation soapAction="http://tempuri.org/get_doc_cat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_by_id">
+      <soap12:operation soapAction="http://tempuri.org/get_hos_by_id" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_hos_for_multi">
+      <soap12:operation soapAction="http://tempuri.org/get_hos_for_multi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_doc_by_id">
+      <soap12:operation soapAction="http://tempuri.org/get_doc_by_id" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hos_dtl_by_list">
+      <soap12:operation soapAction="http://tempuri.org/hos_dtl_by_list" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doc_dtl_by_list">
+      <soap12:operation soapAction="http://tempuri.org/doc_dtl_by_list" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_donation_type">
+      <soap12:operation soapAction="http://tempuri.org/get_donation_type" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_blood">
+      <soap12:operation soapAction="http://tempuri.org/insert_blood" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_organ">
+      <soap12:operation soapAction="http://tempuri.org/insert_organ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_request_blood">
+      <soap12:operation soapAction="http://tempuri.org/insert_request_blood" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_request_organ">
+      <soap12:operation soapAction="http://tempuri.org/insert_request_organ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="pic_src">
+    <wsdl:port name="pic_srcSoap" binding="tns:pic_srcSoap">
+      <soap:address location="http://localhost:51500/picaid_webserv/pic_src.asmx" />
+    </wsdl:port>
+    <wsdl:port name="pic_srcSoap12" binding="tns:pic_srcSoap12">
+      <soap12:address location="http://localhost:51500/picaid_webserv/pic_src.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,192 @@
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\ApplicationIcon.png
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Background.png
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.dll
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.pdb
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\AppManifest.xaml
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid_1._0.xap
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\App.g.cs
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.g.resources
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.dll
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.pdb
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\XapCacheFile.xml
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\microsoft.phone.controls.toolkit.dll
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Akshat\SkyDrive\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\CitySelect.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\ApplicationIcon.png
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Background.png
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.dll
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.pdb
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\AppManifest.xaml
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid_1._0.xap
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\microsoft.phone.controls.toolkit.dll
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\App.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\CitySelect.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.g.resources
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.dll
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.pdb
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\XapCacheFile.xml
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Assets\AppBar\exit.png
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\P1WithOutLogIn.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\loginmain.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_searchall.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_searchall.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\e_service.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\Awareness.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\P2WithLogIn.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\ApplicationIcon.png
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Background.png
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Assets\AppBar\exit.png
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.dll
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.pdb
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\AppManifest.xaml
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid_1._0.xap
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.csprojResolveAssemblyReference.cache
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\App.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\Awareness.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\CitySelect.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_searchall.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\e_service.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_searchall.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\loginmain.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\P1WithOutLogIn.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\P2WithLogIn.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\pro_set.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\splashscreen.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.g.resources
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.dll
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.pdb
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\XapCacheFile.xml
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\ApplicationIcon.png
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Background.png
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Assets\AppBar\exit.png
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.dll
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.pdb
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\AppManifest.xaml
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid_1._0.xap
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.dll
+H:\PicAid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.xml
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.csprojResolveAssemblyReference.cache
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\App.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\Awareness.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\CitySelect.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_searchall.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\e_service.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_searchall.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\loginmain.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\P1WithOutLogIn.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\P2WithLogIn.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\pro_set.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\splashscreen.g.cs
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.g.resources
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.dll
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.pdb
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\XapCacheFile.xml
+H:\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\user_profile.g.cs
+D:\PicAid 1.0\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\user_profile.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\pro_set.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\splashscreen.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\user_profile.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\ApplicationIcon.png
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\Background.png
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\Assets\AppBar\exit.png
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.dll
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.pdb
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\AppManifest.xaml
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid_1._0.xap
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\App.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\Awareness.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\CitySelect.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\doc_searchall.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\e_service.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\hos_searchall.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\loginmain.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\P1WithOutLogIn.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\P2WithLogIn.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\pro_set.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\splashscreen.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\user_profile.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.g.resources
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.dll
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.pdb
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\XapCacheFile.xml
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\hos_list.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\doc_list.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.csprojResolveAssemblyReference.cache
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\doc_detail.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\hos_detail.g.cs
+D:\PicAid 1.0\new\PicAid 1.0\PicAid 1.0\obj\Debug\multi_hos.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.csprojResolveAssemblyReference.cache
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_detail.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_list.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_detail.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_list.g.cs
+D:\Windows Phone App\PicAid\PicAid 1.0\PicAid 1.0\obj\Debug\multi_hos.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\App.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\Awareness.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\CitySelect.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\doc_detail.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\doc_list.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\doc_searchall.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\e_service.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\hos_detail.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\hos_list.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\hos_searchall.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\loginmain.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\multi_hos.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\P1WithOutLogIn.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\P2WithLogIn.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\pro_set.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\splashscreen.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\user_profile.g.cs
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.g.resources
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.dll
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\ApplicationIcon.png
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\Background.png
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\Assets\AppBar\exit.png
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.dll
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.pdb
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\AppManifest.xaml
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid_1._0.xap
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.pdb
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\XapCacheFile.xml
+D:\PicAid 1.0\14-2-14\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.csprojResolveAssemblyReference.cache
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\ApplicationIcon.png
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\Background.png
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\Assets\AppBar\exit.png
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.dll
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0.pdb
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\AppManifest.xaml
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\Properties\WMAppManifest.xml
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\PicAid 1.0_Debug_AnyCPU.xap
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.csprojResolveAssemblyReference.cache
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\App.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\Awareness.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\CitySelect.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_detail.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_list.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\doc_searchall.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\e_service.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_detail.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_list.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\hos_searchall.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\loginmain.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\multi_hos.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\P1WithOutLogIn.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\P2WithLogIn.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\pro_set.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\splashscreen.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\user_profile.g.cs
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.g.resources
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.dll
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\PicAid 1.0.pdb
+D:\Education\Windows Phone App Dev\Pic Aid\PicAid 1.0\PicAid 1.0\obj\Debug\XapCacheFile.xml

@@ -1,0 +1,16 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="pic_srcSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:51500/picaid_webserv/pic_src.asmx"
+                binding="basicHttpBinding" bindingConfiguration="pic_srcSoap"
+                contract="src.pic_srcSoap" name="pic_srcSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>
